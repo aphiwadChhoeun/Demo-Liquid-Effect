@@ -4,6 +4,7 @@
   --main-font: 'Roboto', sans-serif;
   --dark-color: #384259;
   --light-color: #c4edde;
+  --light-shade1-color: #f0f5f9;
   --main-color: #f73859;
 
   --menu-size: 60px;
@@ -24,6 +25,16 @@ a {
   color: var(--light-color);
 }
 
+a:hover {
+  color: var(--light-shade1-color);
+}
+
+.nav {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
 .hidden {
   position: absolute;
   left: -1000;
@@ -41,6 +52,7 @@ a {
 .share-menu-wrapper {
   position: relative;
   filter: url('#liquid-effect');
+  left: -30px;
 }
 
 .share-menu-item,
