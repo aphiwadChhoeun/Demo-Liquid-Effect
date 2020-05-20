@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   let startAngle = 90;
   let angleIncrement = 180 / (menuItemContainers.length - 1);
   let distance = 100;
-  let animSpeed = 500;
+  let animSpeed = 1200;
   let angle;
 
   function setup() {
