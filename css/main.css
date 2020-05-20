@@ -1,0 +1,81 @@
+@import "./normalize.css";
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --dark-color: #384259;
+  --light-color: #c4edde;
+  --main-color: #f73859;
+
+  --menu-size: 60px;
+}
+
+* {
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--light-color);
+}
+
+.hidden {
+  position: absolute;
+  left: -1000;
+  top: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-menu-wrapper {
+  position: relative;
+  filter: url('#liquid-effect');
+}
+
+.share-menu-item,
+.share-menu-toggle {
+  width: var(--menu-size);
+  height: var(--menu-size);
+  position: absolute;
+}
+
+.toggle-link {
+  cursor: pointer;
+}
+
+.menu-link,
+.toggle-link {
+  width: var(--menu-size);
+  height: var(--menu-size);
+  display: block;
+  background-color: var(--main-color);
+  border-radius: 100px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-link i,
+.toggle-link i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
