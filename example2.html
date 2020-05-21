@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/example2.css">
 </head>
 
 <body>
@@ -23,11 +23,12 @@
         1 0 0 0 0  
         0 1 0 0 0  
         0 0 1 0 0  
-        0 0 0 15 -8" result="liquid" />
-        <feComposite in="SourceGraphic" in2="liquid" operator="atop" />
+        0 0 0 19 -12" result="liquid" />
+        <feComposite in="SourceGraphic" in2="liquid" operator="atop" result="drip" />
       </filter>
     </defs>
   </svg>
+
 
   <div class="container">
 
@@ -35,45 +36,30 @@
       <a href="http://www.aphiwadchhoeun.com/">&#8676; Back to Articles</a>
     </div>
 
-    <div class="share-menu-wrapper">
+    <div class="drip-wrapper">
 
-      <div class="share-menu-item">
-        <div class="menu-wrapper menu-item">
-          <a href="#" class="menu-link"><i class="fab fa-twitter"></i></a>
-        </div>
+      <div class="drip-item-container">
+        <div class="drip-item color-one"></div>
+      </div>
+      <div class="drip-item-container">
+        <div class="drip-item color-two"></div>
+      </div>
+      <div class="drip-item-container">
+        <div class="drip-item color-three"></div>
+      </div>
+      <div class="drip-item-container">
+        <div class="drip-item color-four"></div>
+      </div>
+      <div class="drip-item-container">
+        <div class="drip-item color-five"></div>
       </div>
 
-      <div class="share-menu-item">
-        <div class="menu-wrapper menu-item">
-          <a href="#" class="menu-link"><i class="fab fa-facebook-f"></i></a>
-        </div>
-      </div>
-
-      <div class="share-menu-item">
-        <div class="menu-wrapper menu-item">
-          <a href="#" class="menu-link"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-
-      <div class="share-menu-item">
-        <div class="menu-wrapper menu-item">
-          <a href="#" class="menu-link"><i class="fab fa-facebook-messenger"></i></a>
-        </div>
-      </div>
-
-      <div class="share-menu-item">
-        <div class="menu-wrapper menu-item">
-          <a href="#" class="menu-link"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-
-      <div class="share-menu-toggle">
-        <div class="toggle-wrapper">
+      <div class="drip-source-container">
+        <div class="drip-source">
           <a href="#" class="toggle-link">
-            <i class="fas fa-plus"></i>
+            <i class="fas fa-save"></i>
           </a>
         </div>
-
       </div>
 
     </div>
@@ -87,7 +73,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/example2.js"></script>
 </body>
 
 </html>

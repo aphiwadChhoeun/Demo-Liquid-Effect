@@ -1,0 +1,41 @@
+* {
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--light-color);
+}
+
+a:hover {
+  color: var(--light-shade1-color);
+}
+
+.nav {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.hidden {
+  position: absolute;
+  left: -1000;
+  top: 0;
+}
+
+.footer-container {
+  position: fixed;
+  height: 2rem;
+  bottom: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+}

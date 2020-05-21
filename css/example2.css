@@ -1,0 +1,102 @@
+@import "./normalize.css";
+@import "./common.css";
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --dark-color: #384259;
+  --light-color: #c4edde;
+  --light-shade1-color: #f0f5f9;
+  --main-color: #08d9d6;
+
+  --color-one: #e84a5f;
+  --color-two: #ff5722;
+  --color-three: #ffde7d;
+  --color-four: #2a363b;
+  --color-five: #62d2a2;
+
+  --menu-size: 60px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drip-wrapper {
+  position: relative;
+  filter: url('#liquid-effect');
+}
+
+.drip-item-container,
+.drip-source-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.drip-item-container {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: translate(50%, 50%);
+}
+
+.drip-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: var(--main-color);
+}
+
+.color-one {
+  background-color: var(--color-one);
+}
+.color-two {
+  background-color: var(--color-two);
+}
+.color-three {
+  background-color: var(--color-three);
+}
+.color-four {
+  background-color: var(--color-four);
+}
+.color-five {
+  background-color: var(--color-five);
+}
+
+.drip-source-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.drip-source {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: var(--main-color);
+}
+
+.toggle-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--dark-color);
+  font-size: 2rem;
+}
+
+.toggle-link:hover {
+  color: var(--dark-color);
+}
+
+.toggle-link i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
