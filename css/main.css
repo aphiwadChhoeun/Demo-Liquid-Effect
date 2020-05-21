@@ -22,7 +22,8 @@
 .share-menu-wrapper {
   position: relative;
   filter: url('#liquid-effect');
-  left: -30px;
+  left: calc((var(--menu-size) / 2) * -1);
+  top: calc((var(--menu-size) / 2) * -1);
 }
 
 .share-menu-item,

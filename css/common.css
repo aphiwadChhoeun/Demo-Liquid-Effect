@@ -31,11 +31,16 @@ a:hover {
 
 .footer-container {
   position: fixed;
-  height: 2rem;
+  height: 3rem;
   bottom: 0;
 }
 
 .footer-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.footer-wrapper .link-item {
+  margin: 0 1rem;
+  font-size: 1.5rem;
 }

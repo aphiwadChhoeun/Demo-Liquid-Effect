@@ -14,7 +14,8 @@
   --color-four: #2a363b;
   --color-five: #62d2a2;
 
-  --menu-size: 60px;
+  --drip-size: 50px;
+  --toggle-size: 100px;
 }
 
 .container {
@@ -28,6 +29,8 @@
 .drip-wrapper {
   position: relative;
   filter: url('#liquid-effect');
+  left: calc((var(--toggle-size) / 2) * -1);
+  top: calc((var(--toggle-size) / 2) * -1);
 }
 
 .drip-item-container,
@@ -39,8 +42,8 @@
 
 .drip-item-container {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: var(--drip-size);
+  height: var(--drip-size);
   transform: translate(50%, 50%);
 }
 
@@ -70,8 +73,8 @@
 
 .drip-source-container {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: var(--toggle-size);
+  height: var(--toggle-size);
 }
 
 .drip-source {
